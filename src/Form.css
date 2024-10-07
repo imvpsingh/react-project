@@ -1,0 +1,52 @@
+.form-page{
+    margin: 10px;
+    padding: 0px;
+    /* width: 1170px; */
+    background-color: burlywood;
+}
+
+.form-page h1{
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+}
+form{
+    display: inline;
+}
+.element{
+    /* margin: 10px; */
+    /* margin-top: 5px; */
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-around;
+}
+button{
+    /* margin-top: 30px; */
+}
+
+.textArea{
+    display: flex;
+    /* justify-content: space-between; */
+    /* margin: 0px 5px; */
+
+}
+.btnNew{
+    padding: 3px;
+    background-color: rgb(167, 66, 117);
+     color:  rgb(255, 255, 255);
+     font-weight: 600;
+     margin-left: 5px;
+     border-radius: 5px;
+     margin-top: 7px;
+}
+
+.textArea textarea{
+padding: 5px;
+max-lines: 4;
+flex-basis: 80%;
+border: 2px solid  rgb(237, 0, 118);
+color:  rgb(237, 0, 118);
+/* padding-left: 5px; */
+border-radius: 8px;
+}

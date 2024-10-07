@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import questionsAndAnswers from "./data/data";
+import Faqs from "./faqs.jsx";
+import "react-notifications/lib/notifications.css";
+import {
+  NotificationContainer,
+  NotificationManager,
+} from "react-notifications";
+import TodoList from "./todo_list.jsx";
+import ActiveTab from "./active_tab.jsx";
 
 function App() {
+  let [type, setType] = useState(questionsAndAnswers[0].id);
+  let display = (message) => {
+    NotificationManager.error(message);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="app">
+        <NotificationContainer></NotificationContainer>
+        <ActiveTab display={display}></ActiveTab>
+      </div>
+    </>
   );
 }
 

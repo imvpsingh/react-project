@@ -1,0 +1,41 @@
+.main{
+    margin: auto;
+     /* margin-top: 90px;  */
+    /* width: 1170px; */
+} 
+
+
+.content ul{
+    gap: 10px;
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+
+}
+.content  li button {
+    transition: 1s;
+    background-color: rgb(0, 255, 34);
+    padding: 0.5rem 20px;
+    border-radius: 8px;
+    margin: 5px;
+    font-weight: bold;
+
+
+}
+
+.content  li button:hover {
+    background-color: rgb(237, 0, 118);
+    color: white !important;
+    
+}
+.h{
+    color: rgb(0, 255, 34); 
+}
+
+.p{
+   color: rgb(237, 0, 118);
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: 700;
+}
